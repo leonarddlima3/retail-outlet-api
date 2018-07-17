@@ -224,3 +224,18 @@ mysql> SELECT                                                                   
 14 rows in set, 2 warnings (0.01 sec)
 
 
+
+Enhancements to the current system :
+----------------------------------
+
+The current system can be enhanced by adding the following modules
+
+1. Authorization mechanism
+   -----------------------
+Spring Security can be used for Authentication, Authorization for the application. In the production, two servers can be setup for the same, viz., Authentication Server and Resource Server.
+ 	Authentication Server will generate a token based on valid user credentials which is then sent to resource server on each request.
+ 	Resource Server will validate the token and will allow access to its resources based on the role assigned to the logged in user.
+	
+2. Can add some more parameters to the API for generating inventory report
+   -----------------------------------------------------------------------
+API for getting inventory reports based on different parameters of the input like Warehouse, Item, brand, Supplier.
