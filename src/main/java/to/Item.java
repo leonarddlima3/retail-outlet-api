@@ -5,7 +5,8 @@ public class Item {
 	private String itemId;
 	private String itemName;
 	private String itemTypeId;
-	private String itemTypeName;
+	private String itemType;
+	private int itemPrice;
 	public String getItemId() {
 		return itemId;
 	}
@@ -24,13 +25,16 @@ public class Item {
 	public void setItemTypeId(String itemTypeId) {
 		this.itemTypeId = itemTypeId;
 	}
-	public String getItemTypeName() {
-		return itemTypeName;
+	public String getItemType() {
+		return itemType;
 	}
-	public void setItemTypeName(String itemTypeName) {
-		this.itemTypeName = itemTypeName;
+	public void setItemType(String itemType) {
+		this.itemType = itemType;
 	}
-	
-	
-
+	public int getItemPrice() {
+		return itemPrice;
+	}
+	public void setItemPrice(int itemPrice) {
+		this.itemPrice = itemPrice;
+	}
 }

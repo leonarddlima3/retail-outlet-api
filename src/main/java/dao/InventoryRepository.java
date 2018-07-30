@@ -7,6 +7,6 @@ import to.WarehouseDetails;
 
 public interface InventoryRepository {
 	
-	public Map<WarehouseDetails, List<ItemDetails>> getInventoryDetails();
+	public Map<WarehouseDetails, List<ItemDetails>> getInventoryDetails(String warehouseId);
 
 }

@@ -2,8 +2,8 @@ package to;
 
 public class InventoryRow {
 	
-	private String WarehouseId;
-	private String WarehouseName;
+	private String warehouseId;
+	private String warehouseName;
 	private String itemId;
 	private String itemName;
 	private String itemTypeId;
@@ -11,16 +11,16 @@ public class InventoryRow {
 	private String brandId;
 	private String brandName;
 	public String getWarehouseId() {
-		return WarehouseId;
+		return warehouseId;
 	}
 	public void setWarehouseId(String warehouseId) {
-		WarehouseId = warehouseId;
+		this.warehouseId = warehouseId;
 	}
 	public String getWarehouseName() {
-		return WarehouseName;
+		return warehouseName;
 	}
 	public void setWarehouseName(String warehouseName) {
-		WarehouseName = warehouseName;
+		this.warehouseName = warehouseName;
 	}
 	public String getItemId() {
 		return itemId;

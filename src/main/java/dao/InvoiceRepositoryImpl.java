@@ -19,7 +19,7 @@ public class InvoiceRepositoryImpl implements InvoiceRepository{
 	public void insertInvoiceData(Invoice invoice) throws SQLException, ClassNotFoundException {
 		
 		String query = "INSERT INTO INVOICE_DETAILS VALUES (?,?,?,?,?)";
-		try {
+		
 			int res = jdbcTemplate.update(query,
 		            invoice.getInvoiceId(), invoice.getDate(), invoice.getTotal(), invoice.getTax(), invoice.getTaxPerc());
 		    if(res != 0) {
@@ -31,9 +31,7 @@ public class InvoiceRepositoryImpl implements InvoiceRepository{
 		    		index++;
 		    	}
 		    }
-		} catch(Exception e) {
-			
-		}
+		
 	}
 
 }

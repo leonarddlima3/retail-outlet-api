@@ -18,8 +18,8 @@ public class InventoryServiceImpl implements InventoryService {
 	@Autowired
 	InventoryRepository inventoryRepository;
 	
-	public List<Inventory> getInventory () {
-		Map<WarehouseDetails, List<ItemDetails>> map = inventoryRepository.getInventoryDetails();
+	public List<Inventory> getInventory (String warehouseId) {
+		Map<WarehouseDetails, List<ItemDetails>> map = inventoryRepository.getInventoryDetails(warehouseId);
 		List<Inventory> inventoryList = new ArrayList<>();
 		
 		for(Map.Entry<WarehouseDetails, List<ItemDetails>> entry : map.entrySet()) {
